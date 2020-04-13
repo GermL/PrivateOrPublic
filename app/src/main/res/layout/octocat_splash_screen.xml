@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/purple_bg">
+
+    <ImageView
+        android:id="@+id/octocat_imageview"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:src="@drawable/octocat"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/cat_shadow_stand"
+        android:layout_width="244dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="124dp"
+        android:src="@drawable/cat_shadow_stand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/get_started_button"/>
+
+    <TextView
+        android:id="@+id/logo_textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/catacles_text"
+        android:paddingTop="20dp"
+        android:layout_marginStart="2dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/octocat_imageview"/>
+
+    <TextView
+        android:id="@+id/logo_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/catacles_text"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#FFF0951C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/octocat_imageview"/>
+
+    <ImageView
+        android:id="@+id/get_started_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/get_started_btn"
+        android:contentDescription="This starts the application"
+        android:focusable="true" />
+
+    <FrameLayout
+        android:id="@+id/login_frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
